@@ -1,0 +1,24 @@
+{
+  "name": "@ndeuja/simple-ui",
+  "version": "1.0.0",
+  "description": "Simple common function in typescript to manage react project",
+  "main": "lib/index.js",
+  "types": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "react-scripts test"
+  },
+  "keywords": [],
+  "author": "Nimesh Deuja",
+  "license": "",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.5",
+    "react-scripts": "^4.0.3",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  }
+}
