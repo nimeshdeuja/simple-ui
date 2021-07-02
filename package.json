@@ -1,12 +1,14 @@
 {
   "name": "@ndeuja/simple-ui",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "description": "Simple common function in typescript to manage react project",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p .",
-    "test": "react-scripts test"
+    "clean": "rimraf lib/",
+    "build": "npm run clean && tsc -p .",
+    "test": "react-scripts test",
+    "create":"npm run build && npm publish"
   },
   "keywords": ["simple-ui"],
   "author": "Nimesh Deuja",

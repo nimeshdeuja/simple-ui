@@ -17,7 +17,6 @@ import {
   ShortArray,
   GetIndexBy,
   ShortNameGenerate,
-  CheckValidity,
 } from "@ndeuja/simple-ui";
 
 let OldObj = { name: "Nimesh Deuja" };
@@ -40,7 +39,6 @@ let index = GetIndexBy(ShortedArr, 34, "age");
 let ShortName = ShortNameGenerate("Nimesh Deuja");
 // return 'ND'
 
-CheckValidity(value, rules); // to validate simple form
 ```
 
 ### Author

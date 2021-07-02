@@ -1,4 +1,4 @@
-import {UpdateObject, UpdateArray, ShortArray, GetIndexBy,ShortNameGenerate, CheckValidity} from './Hooks'
+import {UpdateObject, UpdateArray, ShortArray, GetIndexBy,ShortNameGenerate} from './Hooks'
 
 describe('Hooks Function testing',()=>{
     it('UpdateObject',()=>{
@@ -45,44 +45,5 @@ describe('Hooks Function testing',()=>{
         expect(ShortNameGenerate(name)).toEqual('ND')
         expect(ShortNameGenerate(name1)).toEqual('NE')
         expect(ShortNameGenerate(name2)).toEqual('NI')
-    })
-
-    it('CheckValidity',()=>{
-        let rules={
-            required: true,
-            min: 6,
-            max: 30,
-            // isEmail:true,
-            // checkbox:true,
-        }
-        expect(CheckValidity('Nim', {
-            required: true,
-            min: 4,
-            max: 10,
-        })).not.toEqual(true)
-        expect(CheckValidity('Nimesh', {
-            required: true,
-            min: 4,
-            max: 10,
-        })).toEqual(true)
-        expect(CheckValidity('Nimesh Deuja', {
-            required: true,
-            min: 4,
-            max: 10,
-        })).not.toEqual(true)
-
-        expect(CheckValidity('Nimesh Deuja', {
-            isEmail:true,
-        })).not.toEqual(true)
-        expect(CheckValidity('imnimesh017@gmail.com', {
-            isEmail:true,
-        })).toEqual(true)
-
-        expect(CheckValidity(true, {
-            checkbox:true,
-        })).toEqual(true)
-        expect(CheckValidity(true, {
-            checkbox:true,
-        })).not.toEqual(false)
     })
 })
