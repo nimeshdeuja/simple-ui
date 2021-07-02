@@ -1,3 +1,2 @@
-export const Add =(a:number, b:number)=>{
-    return a+b
-}
+import {UpdateObject, UpdateArray, ShortArray, GetIndexBy, ShortNameGenerate, CheckValidity} from './Hooks/Hooks'
+export {UpdateObject, UpdateArray, ShortArray, GetIndexBy, ShortNameGenerate, CheckValidity}
